@@ -5,6 +5,8 @@ import java.io.Serializable;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 @Document(collection = "configs")
 public class Configuration implements Serializable {
 
@@ -13,11 +15,17 @@ public class Configuration implements Serializable {
 	 */
 	private static final long serialVersionUID = 465532586020871962L;
 	@Id
+	@JsonProperty
 	private Long id;
+	@JsonProperty
 	private String name;
+	@JsonProperty
 	private String type;
+	@JsonProperty
 	private String value;
+	@JsonProperty
 	private Integer active;
+	@JsonProperty
 	private String applicationName;
 
 	public Configuration() {
