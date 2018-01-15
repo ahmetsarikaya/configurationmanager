@@ -18,6 +18,8 @@ JQuery
 
 Bootstarp
 
+Maven
+
 Uygulamalar çalıştırılmadan önce MongoDb çalışır durumda olmalıdır.
 
 # ConfigurationManagerWeb
